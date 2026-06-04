@@ -1,31 +1,63 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Blog Peribadi Saya</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio & Blog</title>
+    <!-- Menyambungkan fail CSS external -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Menggunakan Font Awesome untuk ikon menu dan media sosial -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Selamat Datang ke Blog Peribadi Saya</h1>
-        <button id="dark-mode-toggle" class="theme-btn">🌙 Mod Gelap</button>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <h2>Hai semua! 👋</h2>
-        <p>Ini adalah laman portfolio dan blog peribadi saya yang dibangunkan untuk tugasan CSD 34203 Special Topics in Software Development.</p>
-        <p>Sila gunakan menu di atas untuk melawat halaman lain.</p>
-    </div>
-    <footer>
-        <p>&copy; 2026 Blog Peribadi Saya. CSD 34203.</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <!-- SIDEBAR KIRI (NAVIGASI) -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <!-- Ganti imej di bawah dengan gambar profil anda sendiri di dalam folder images -->
+            <img src="Syafiqah.jpg" alt="Profile Picture" class="profile-img">
+            <h2>Nursyafiqah Binti Abu Hassan</h2>
+            
+            <!-- Ikon Media Sosial -->
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+
+        <!-- Menu Navigasi -->
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item active"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="nav-item"><i class="fas fa-user"></i> About Me</a>
+            <a href="resume.html" class="nav-item"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="blog.html" class="nav-item"><i class="fas fa-newspaper"></i> Articles</a>
+            <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+
+        <!-- Hakcipta di bahagian bawah sidebar -->
+        <footer class="sidebar-footer">
+            <p>&copy; 2026 NursyafiqahMedia.<br>Built for CSD34203.</p>
+        </footer>
+    </aside>
+
+    <!-- KANDUNGAN UTAMA SEBELAH KANAN (HERO SECTION) -->
+    <main class="main-content">
+        <div class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-text">
+                <h1>Nursyafiqah Binti Abu Hassan</h1>
+                <p>I am a final-year student majoring in <span class="highlight">Informatics Media</span> at UniSZA.</p>
+                
+                <!-- Indikator Skrol ke Bawah -->
+                <div class="scroll-down">
+                    <p>Scroll Down to View Portfolio</p>
+                    <i class="fas fa-chevron-down arrow-animation"></i>
+                </div>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>
