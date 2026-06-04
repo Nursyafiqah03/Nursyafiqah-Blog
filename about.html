@@ -1,36 +1,51 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link rel="stylesheet" href="style.css">
+    <title>About Me | Nursyafiqah Binti Abu Hassan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Tentang Saya</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <!-- BAHAGIAN GAMBAR PROFIL SYAFIQAH -->
-        <div class="profile-img-container">
-            <img src="Syafiqah_2.jpg" alt="Gambar Syafiqah" class="profile-img">
+
+    <!-- SIDEBAR KIRI -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+            <h2>Nursyafiqah Binti Abu Hassan</h2>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
         </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="nav-item active"><i class="fas fa-user"></i> About Me</a>
+            <a href="resume.html" class="nav-item"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="blog.html" class="nav-item"><i class="fas fa-newspaper"></i> Articles</a>
+            <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <footer class="sidebar-footer">
+            <p>&copy; 2026 SyafiqahMedia.<br>Built for CSD34203.</p>
+        </footer>
+    </aside>
 
-        <h2>Latar Belakang</h2>
-        <p>Saya adalah pelajar Fakulti Informatika dan Komputer (FIK), Universiti Sultan Zainal Abidin (UniSZA).</p>
-        <p>Blog ini dicipta untuk mempamerkan kemahiran pembangunan perisian dan pemikiran keusahawanan saya melalui platform GitHub.</p>
-    </div>
-    <footer>
-        <p>&copy; 2026 Blog Peribadi Saya.</p>
-    </footer>
+    <!-- KANDUNGAN KANAN -->
+    <main class="main-content content-page">
+        <div class="container">
+            <h2 class="page-title">About Me</h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Hello! Saya Syafiqah.</h3>
+                    <p>Saya merupakan pelajar tahun akhir dalam jurusan <strong>Informatics Media</strong> di Universiti Sultan Zainal Abidin (UniSZA).</p>
+                    <p>Sepanjang pengajian di Fakulti Informatik dan Komputer (FIK), saya telah mempelajari pelbagai kemahiran teknologi untuk menghasilkan produk digital yang interaktif, responsif, dan mesra pengguna.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <!-- Skrip untuk membaca status mod gelap dari page index secara automatik -->
-    <script src="script.js"></script>
 </body>
 </html>

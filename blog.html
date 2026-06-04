@@ -1,38 +1,67 @@
 <!DOCTYPE html>
-<html lang="ms">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Posts</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Articles | Nursyafiqah Binti Abu Hassan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <h1>Koleksi Artikel Blog</h1>
-    </header>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="blog.html">Blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
-        <article>
-            <h2>Artikel 1: Pengenalan Git & GitHub</h2>
-            <p><small>Diterbitkan pada: Jun 2026</small></p>
-            <p>Git sangat membantu pembangun perisian untuk menjejak perubahan kod, manakala GitHub memudahkan perkongsian projek portfolio secara global.</p>
-        </article>
-        <hr>
-        <article>
-            <h2>Artikel 2: Kepentingan Minda Usahawan dalam Teknologi</h2>
-            <p><small>Diterbitkan pada: Jun 2026</small></p>
-            <p>Sebagai pembangun perisian, kita bukan sahaja menulis kod, tetapi kita perlu menyelesaikan masalah sebenar pengguna untuk mencipta nilai produk.</p>
-        </article>
-    </div>
-    <footer>
-        <p>&copy; 2026 Blog Peribadi Saya.</p>
-    </footer>
 
-    <script src="script.js"></script>
+    <!-- SIDEBAR KIRI -->
+    <aside class="sidebar">
+        <div class="profile-section">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-img">
+            <h2>Nursyafiqah Binti Abu Hassan</h2>
+            <div class="social-icons">
+                <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a href="mailto:email@example.com"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+        <nav class="nav-menu">
+            <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
+            <a href="about.html" class="nav-item"><i class="fas fa-user"></i> About Me</a>
+            <a href="resume.html" class="nav-item"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="blog.html" class="nav-item active"><i class="fas fa-newspaper"></i> Articles</a>
+            <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a>
+        </nav>
+        <footer class="sidebar-footer">
+            <p>&copy; 2026 SyafiqahMedia.<br>Built for CSD34203.</p>
+        </footer>
+    </aside>
+
+    <!-- KANDUNGAN KANAN -->
+    <main class="main-content content-page">
+        <div class="container">
+            <h2 class="page-title">My Articles</h2>
+            
+            <div class="blog-grid">
+                <!-- Artikel 1 -->
+                <article class="blog-card">
+                    <h3 class="blog-title">Pengenalan Kepada Informatik Media</h3>
+                    <p class="blog-date">Diterbitkan pada: 12 Mac 2026</p>
+                    <p class="blog-excerpt">Informatik Media menggabungkan sains komputer dengan elemen multimedia untuk membina platform komunikasi digital masa kini...</p>
+                </article>
+
+                <!-- Artikel 2 -->
+                <article class="blog-card">
+                    <h3 class="blog-title">Kepentingan Rekabentuk Responsif (Mobile-Friendly)</h3>
+                    <p class="blog-date">Diterbitkan pada: 28 April 2026</p>
+                    <p class="blog-excerpt">Lebih daripada 60% pengguna melayari internet menggunakan telefon pintar. Ini menjadikan reka bentuk responsif satu keperluan wajib...</p>
+                </article>
+
+                <!-- Artikel 3 -->
+                <article class="blog-card">
+                    <h3 class="blog-title">Perjalanan Akhir Tahun di UniSZA Besut</h3>
+                    <p class="blog-date">Diterbitkan pada: 4 Jun 2026</p>
+                    <p class="blog-excerpt">Meniti semester akhir di Kampus Besut memberikan seribu satu memori berharga dari segi kematangan pengaturcaraan dan kerja berpasukan...</p>
+                </article>
+            </div>
+        </div>
+    </main>
+
 </body>
 </html>

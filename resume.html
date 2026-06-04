@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact | Nursyafiqah Binti Abu Hassan</title>
+    <title>Resume | Nursyafiqah Binti Abu Hassan</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -24,9 +24,9 @@
         <nav class="nav-menu">
             <a href="index.html" class="nav-item"><i class="fas fa-home"></i> Home</a>
             <a href="about.html" class="nav-item"><i class="fas fa-user"></i> About Me</a>
-            <a href="resume.html" class="nav-item"><i class="fas fa-file-alt"></i> Resume</a>
+            <a href="resume.html" class="nav-item active"><i class="fas fa-file-alt"></i> Resume</a>
             <a href="blog.html" class="nav-item"><i class="fas fa-newspaper"></i> Articles</a>
-            <a href="contact.html" class="nav-item active"><i class="fas fa-envelope"></i> Contact</a>
+            <a href="contact.html" class="nav-item"><i class="fas fa-envelope"></i> Contact</a>
         </nav>
         <footer class="sidebar-footer">
             <p>&copy; 2026 SyafiqahMedia.<br>Built for CSD34203.</p>
@@ -36,22 +36,25 @@
     <!-- KANDUNGAN KANAN -->
     <main class="main-content content-page">
         <div class="container">
-            <h2 class="page-title">Contact Me</h2>
-            <form class="contact-form" onsubmit="alert('Mesej berjaya dihantar!'); return false;">
-                <div class="form-group">
-                    <label>Nama</label>
-                    <input type="text" required placeholder="Masukkan nama anda">
+            <h2 class="page-title">My Resume</h2>
+            
+            <div class="resume-section">
+                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                <div class="resume-item">
+                    <h4>Ijazah Sarjana Muda Informatik Media (Kepujian)</h4>
+                    <h5>Universiti Sultan Zainal Abidin (UniSZA) | 2023 - 2026</h5>
+                    <p>Fokus kepada pembangunan multimedia, reka bentuk UI/UX, dan aplikasi web.</p>
                 </div>
-                <div class="form-group">
-                    <label>Emel</label>
-                    <input type="email" required placeholder="Masukkan emel anda">
-                </div>
-                <div class="form-group">
-                    <label>Mesej</label>
-                    <textarea rows="5" required placeholder="Tulis mesej anda di sini..."></textarea>
-                </div>
-                <button type="submit" class="btn-submit">Hantar Mesej</button>
-            </form>
+            </div>
+
+            <div class="resume-section">
+                <h3><i class="fas fa-tools"></i> Skills</h3>
+                <ul class="skills-list">
+                    <li>HTML5 / CSS3 / JavaScript</li>
+                    <li>UI/UX Design & Branding</li>
+                    <li>Multimedia Editing (Adobe Suite)</li>
+                </ul>
+            </div>
         </div>
     </main>
 
