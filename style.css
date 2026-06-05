@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght=300;400;600;700&display=swap');
 
 html {
-    scroll-behavior: smooth; /* Ini fungsi utama yang membuatkan skrol bergerak secara gelongsor lancar */
+    scroll-behavior: smooth;
 }
 
 * {
@@ -18,7 +18,7 @@ body {
     overflow-x: hidden;
 }
 
-/* --- SIDEBAR KIRI --- */
+/* --- SIDEBAR --- */
 .sidebar {
     width: 300px;
     height: 100vh;
@@ -106,14 +106,13 @@ body {
     color: #f4f1de;
 }
 
-/* --- KANDUNGAN UTAMA KANAN --- */
+/* --- MAIN CONTENT --- */
 .main-content {
     margin-left: 300px;
     width: calc(100% - 300px);
     min-height: 100vh;
 }
 
-/* Hero Style */
 .hero-page {
     background: url('Pantai.jpg') no-repeat center bottom/cover;
     position: relative;
@@ -145,10 +144,9 @@ body {
     margin-bottom: 20px;
 }
 
-/* Menggunakan class khusus untuk mengelakkan pertembungan gaya */
 .hero-text .hero-bio {
     font-size: 1.1rem;
-    margin-bottom: 60px; /* Memberikan ruang tolak ke bawah untuk butang skrol pada PC */
+    margin-bottom: 60px;
 }
 
 .highlight {
@@ -156,26 +154,9 @@ body {
     border-bottom: 2px solid #f4f1de;
 }
 
-/* Gaya khas untuk tag pembungkus pautan skrol */
-.scroll-down-link {
-    text-decoration: none;
-    color: inherit;
-    cursor: pointer;
-    display: inline-block;
-}
-
-.scroll-down {
-    font-size: 0.85rem;
-    color: #f4f1de;
-    text-align: center;
-}
-
-.scroll-down i {
-    display: block;
-    margin-top: 10px;
-    color: #f4f1de;
-    animation: bounce 2s infinite;
-}
+.scroll-down-link { text-decoration: none; color: inherit; cursor: pointer; }
+.scroll-down { font-size: 0.85rem; color: #f4f1de; text-align: center; }
+.scroll-down i { display: block; margin-top: 10px; animation: bounce 2s infinite; }
 
 @keyframes bounce {
     0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
@@ -183,222 +164,43 @@ body {
     60% { transform: translateY(-4px); }
 }
 
-/* Layout untuk Halaman Kandungan Biasa */
-.content-page {
-    padding: 60px 40px;
-    background-color: #111112;
-}
+.content-page { padding: 60px 40px; background-color: #111112; }
+#portfolio { padding: 100px 40px; background-color: #0b2416; }
+.container { max-width: 900px; }
+.page-title { font-size: 2.2rem; margin-bottom: 40px; border-bottom: 2px solid #222; padding-bottom: 10px; color: #f4f1de; }
 
-#portfolio {
-    padding: 100px 40px; 
-    background-color: #0b2416;
-}
+/* --- RESUME & ABOUT STYLING --- */
+.about-grid { display: flex; gap: 40px; align-items: flex-start; margin-top: 20px; }
+.about-large-img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); border: 1px solid #222; }
 
-.container {
-    max-width: 900px;
-}
-
-.page-title {
-    font-size: 2.2rem;
-    margin-bottom: 40px;
-    border-bottom: 2px solid #222;
-    padding-bottom: 10px;
-    color: #f4f1de;
-}
-
-/* --- GAYA STRUKTUR GRID ABOUT ME (PC/LAPTOP) --- */
-.about-grid {
-    display: flex;
-    gap: 40px;
-    align-items: flex-start;
-    margin-top: 20px;
-}
-
-.about-image-container {
-    flex: 1;
-    max-width: 320px; /* Lebar maksimum gambar profil Syafiqah1 */
-}
-
-.about-large-img {
-    width: 100%;
-    height: auto;
-    border-radius: 12px; /* Kesan bucu bulat moden */
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Kesan bayang lembut belakang gambar */
-    border: 1px solid #222;
-}
-
-.about-text {
-    flex: 2;
-}
-
-.about-text h3 {
-    font-size: 1.8rem;
-    color: #f4f1de;
-    margin-bottom: 15px;
-}
-
-.about-text p {
-    font-size: 1.05rem;
-    line-height: 1.7;
-    color: #bbb;
-    margin-bottom: 15px;
-}
-
-/* Gaya Resume & Blog */
-.resume-section, .blog-grid {
+/* Resume Modern Card Style */
+.resume-section {
+    background: #161618;
+    padding: 25px;
+    border-radius: 10px;
     margin-bottom: 30px;
-}
-
-.resume-item, .blog-card {
-    background-color: #161618;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    border-left: 3px solid #f4f1de;
-}
-
-.blog-date {
-    font-size: 0.8rem;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.skills-list {
-    margin-left: 20px;
-    line-height: 2;
-}
-
-/* Gaya Borang Hubungi */
-.contact-form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.form-group input, .form-group textarea {
-    background-color: #161618;
     border: 1px solid #222;
-    padding: 12px;
-    border-radius: 6px;
-    color: #f4f1de;
 }
 
-.btn-submit {
-    background-color: #f4f1de;
-    color: #000;
-    padding: 12px;
-    border: none;
-    border-radius: 6px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-}
+.resume-section h3 { color: #f4f1de; margin-bottom: 20px; display: flex; align-items: center; gap: 10px; }
+.resume-item { border-left: 3px solid #f4f1de; padding-left: 15px; margin-bottom: 20px; }
+.resume-item h4 { color: #fff; margin-bottom: 5px; }
+.resume-item .institution { font-weight: 600; color: #ccc; margin-bottom: 5px; }
+.resume-item .date { font-style: italic; color: #888; font-size: 0.9rem; }
 
-.btn-submit:hover {
-    background-color: #ece8c9;
-}
+.skills-grid { display: flex; flex-wrap: wrap; gap: 10px; }
+.skill-tag { background: #222; color: #f4f1de; padding: 8px 15px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #333; }
 
-/* --- REKA BENTUK RESPONSIF (MOBILE & TABLET) --- */
+/* Blog & Contact */
+.blog-card { background-color: #161618; padding: 20px; border-radius: 8px; margin-bottom: 15px; border-left: 3px solid #f4f1de; }
+.contact-form { display: flex; flex-direction: column; gap: 15px; }
+.form-group input, .form-group textarea { background-color: #161618; border: 1px solid #222; padding: 12px; border-radius: 6px; color: #f4f1de; }
+.btn-submit { background-color: #f4f1de; color: #000; padding: 12px; border-radius: 6px; cursor: pointer; font-weight: 600; }
+
+/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
-    body { 
-        flex-direction: column; 
-    }
-    
-    .sidebar { 
-        width: 100%; 
-        height: auto; 
-        position: relative; 
-        padding: 20px 15px; 
-        border-right: none;
-        border-bottom: 1px solid #1f1f22;
-    }
-
-    .profile-img {
-        width: 80px;  
-        height: 80px;
-    }
-
-    .nav-menu {
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: wrap;
-        gap: 5px;
-        margin-top: 10px;
-    }
-
-    .nav-item {
-        padding: 6px 10px;
-        font-size: 0.8rem;
-        gap: 6px;
-    }
-
-    .sidebar-footer {
-        display: none;
-    }
-
-    .main-content { 
-        margin-left: 0; 
-        width: 100%; 
-    }
-
-    .hero-page {
-        padding: 40px 20px;
-        min-height: calc(100vh - 180px); 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .hero-text {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 20px; 
-    }
-
-    .hero-text h1 { 
-        font-size: 1.8rem; 
-        line-height: 1.3;
-        margin-bottom: 0;
-        padding: 0 10px;
-    }
-
-    .hero-text .hero-bio {
-        font-size: 0.9rem;
-        padding: 0 10px;
-        margin-bottom: 15px; 
-        line-height: 1.5;
-    }
-
-    .scroll-down-link {
-        display: inline-block;
-        margin-top: 5px;
-    }
-
-    .scroll-down {
-        font-size: 0.8rem;
-    }
-
-    /* RESPONSIVE MOBILE (ABOUT ME) */
-    .about-grid {
-        flex-direction: column; /* Gambar beralih ke atas teks secara automatik di telefon */
-        align-items: center;
-        gap: 25px;
-        text-align: center;
-    }
-    
-    .about-image-container {
-        max-width: 260px; /* Kecilkan sedikit saiz gambar pada skrin telefon */
-    }
-
-    .content-page, #portfolio {
-        padding: 50px 20px !important;
-    }
+    body { flex-direction: column; }
+    .sidebar { width: 100%; height: auto; position: relative; }
+    .main-content { margin-left: 0; width: 100%; }
+    .about-grid { flex-direction: column; text-align: center; }
 }
