@@ -114,12 +114,13 @@ body {
 
 /* Hero Style */
 .hero-page {
-    background: url('../images/background.jpg') no-repeat center center/cover;
+    background: url('Pantai.jpg') no-repeat center bottom/cover;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 150px 0;
 }
 
 .hero-overlay {
