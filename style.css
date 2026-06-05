@@ -121,7 +121,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 150px 0;
+    min-height: 100vh;
 }
 
 .hero-overlay {
@@ -134,17 +134,21 @@ body {
 .hero-text {
     position: relative;
     z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
 }
 
 .hero-text h1 {
     font-size: 4rem;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-/* Ditambah untuk menolak teks info ke bawah pada skrin PC/Laptop */
-.hero-text p {
+/* Menggunakan class khusus untuk mengelakkan pertembungan gaya */
+.hero-text .hero-bio {
     font-size: 1.1rem;
-    margin-top: 55px; 
+    margin-bottom: 60px; /* Memberikan ruang tolak ke bawah untuk butang skrol pada PC */
 }
 
 .highlight {
@@ -152,18 +156,23 @@ body {
     border-bottom: 2px solid #f4f1de;
 }
 
+/* Gaya khas untuk tag pembungkus pautan skrol */
+.scroll-down-link {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+    display: inline-block;
+}
+
 .scroll-down {
-    position: absolute;
-    bottom: 15px;
-    left: 50%;
-    transform: translateX(-50%);
     font-size: 0.85rem;
     color: #f4f1de;
+    text-align: center;
 }
 
 .scroll-down i {
     display: block;
-    margin-top: 8px;
+    margin-top: 10px;
     color: #f4f1de;
     animation: bounce 2s infinite;
 }
@@ -180,9 +189,8 @@ body {
     background-color: #111112;
 }
 
-/* Khusus untuk ID portfolio di index.html supaya seimbang jarak kirinya di PC */
 #portfolio {
-    padding: 100px 40px 100px 40px; 
+    padding: 100px 40px; 
     background-color: #0b2416;
 }
 
@@ -264,22 +272,20 @@ body {
         flex-direction: column; 
     }
     
-    /* Sidebar bertukar menjadi header atas */
     .sidebar { 
         width: 100%; 
         height: auto; 
         position: relative; 
-        padding: 30px 20px;
+        padding: 20px 15px; /* Kurangkan sedikit padding untuk jimatkan ruang desktop mobile */
         border-right: none;
         border-bottom: 1px solid #1f1f22;
     }
 
     .profile-img {
-        width: 90px;
-        height: 90px;
+        width: 80px;  /* Kecilkan sedikit gambar untuk memberi lebih ruang kepada bahagian kandungan */
+        height: 80px;
     }
 
-    /* Tukar susunan menu ke melintang (horizontal) supaya muat skrin telefon */
     .nav-menu {
         flex-direction: row;
         justify-content: center;
@@ -289,26 +295,24 @@ body {
     }
 
     .nav-item {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-        gap: 8px;
+        padding: 6px 10px;
+        font-size: 0.8rem;
+        gap: 6px;
     }
 
-    /* Sembunyikan footer sidebar di mobile supaya tak serabut */
     .sidebar-footer {
         display: none;
     }
 
-    /* Kandungan utama memenuhi 100% skrin telefon */
     .main-content { 
         margin-left: 0; 
         width: 100%; 
     }
 
-    /* --- PERBAIKAN STRUKTUR TEKS BAGI MENGELAKKAN BERTINDAN DI MOBILE --- */
+    /* Penyelarasan penuh bagi mencontohi reka bentuk struktur PC */
     .hero-page {
-        padding: 80px 20px;
-        min-height: 80vh;   /* Menyelaraskan ketinggian mengikut skrin telefon */
+        padding: 40px 20px;
+        min-height: calc(100vh - 180px); /* Memotong saiz ketinggian header navigasi atas */
         display: flex;
         align-items: center;
         justify-content: center;
@@ -316,38 +320,36 @@ body {
 
     .hero-text {
         display: flex;
-        flex-direction: column; /* Menyusun elemen secara beratur ke bawah */
+        flex-direction: column;
         align-items: center;
-        gap: 30px;             /* Memberikan jarak pemisah yang selamat antara elemen */
-        width: 100%;
+        justify-content: center;
+        gap: 20px; /* Menyusun secara tegak: Nama -> Bio -> Butang Skrol */
     }
 
-    /* Kecilkan saiz h1 nama anda supaya tidak terpotong */
     .hero-text h1 { 
-        font-size: 2.2rem; 
+        font-size: 1.8rem; /* Memastikan nama tidak terputus kepada terlalu banyak baris */
         line-height: 1.3;
         margin-bottom: 0;
-        padding: 0 15px;
+        padding: 0 10px;
     }
 
-    .hero-text p {
-        font-size: 0.95rem;
-        padding: 0 20px;
-        margin-top: 0;         /* Set semula margin bagi mengelakkan konflik sistem PC */
-        order: 2;              /* Memastikan ayat info berada di bawah nama */
+    .hero-text .hero-bio {
+        font-size: 0.9rem;
+        padding: 0 10px;
+        margin-bottom: 15px; /* Menggantikan margin besar PC kepada jarak selamat mobile */
+        line-height: 1.5;
     }
 
-    /* Mengubah butang scroll down kepada relative supaya mengikut barisan secara natural */
+    .scroll-down-link {
+        display: inline-block;
+        margin-top: 5px;
+    }
+
     .scroll-down {
-        position: relative;
-        bottom: 0;
-        margin-top: 15px;
-        order: 3;              /* Memastikan butang scroll down berada di bawah perenggan info */
-        color: #f4f1de;
+        font-size: 0.8rem;
     }
 
-    /* Jarak padding halaman kandungan biasa untuk mobile */
     .content-page, #portfolio {
-        padding: 60px 20px !important;
+        padding: 50px 20px !important;
     }
 }
