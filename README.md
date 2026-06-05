@@ -1,19 +1,24 @@
+Here is the English version of your `README.md` content:
+
 # Personal Blog Page - CSD 34203
 
-## Deskripsi Projek
-Projek ini merupakan sebuah Blog Peribadi mudah yang mengandungi profil, artikel blog ringkas, serta borang hubungan. Projek ini dibina untuk memenuhi keperluan tugasan individu kursus Special Topics in Software Development (UniSZA).
+## Project Description
 
-## Ciri-Ciri Utama (Features)
-* Reka bentuk web yang **Responsive** (Mesra paparan Desktop dan Telefon Pintar).
-* Struktur halaman yang lengkap: Home, About, Blog, dan Contact.
-* Gaya reka letak menggunakan CSS moden.
+This project is a simple Personal Blog that includes a profile, short blog articles, and a contact form. It was built to fulfill the individual assignment requirements for the Special Topics in Software Development course at Universiti Sultan Zainal Abidin (UniSZA).
 
-## Teknologi yang Digunakan
+## Key Features
+
+* **Responsive** web design (Mobile and Desktop friendly).
+* Complete page structure: Home, About, Blog, and Contact.
+* Modern CSS layout styling.
+
+## Technologies Used
+
 * HTML5
 * CSS3
 
-## Cara Menjalankan Projek
-1. Muat turun (*Clone*) repositori ini.
-2. Buka folder projek di komputer anda.
-3. Klik dua kali pada fail `index.html` untuk membukanya di pelayar web (browser).
+## How to Run the Project
 
+1. Clone this repository.
+2. Open the project folder on your computer.
+3. Double-click the `index.html` file to open it in your web browser.
